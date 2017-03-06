@@ -1,0 +1,29 @@
+.body_background{
+  background-color: #404040;
+  color: white;
+}
+
+.text_programming{
+  width: 20%;
+  color: #00FFD2;
+  font-family:'Bahiana',Arial, sans-serif;
+  font-size: 30px;
+  background-color: #606060;
+  float: left;
+}
+
+#text_info{
+  width: 75%;
+  float: left;
+  font-size: 30px;
+  text-align: justify;
+}
+
+.label{
+  color: white;
+}
+
+#final{
+  float: left;
+  text-align: center;
+}

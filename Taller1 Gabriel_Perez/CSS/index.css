@@ -1,0 +1,29 @@
+#principal{
+  width: 40%;
+  margin-left: 30%;
+}
+#final{
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 3%;
+  text-align: center;
+  color: red;
+}
+
+hr {
+  background-color: #404040;
+  height: 2px;
+  width: 50%;
+}
+body{
+  background-color: #F2F0FF;
+}
+
+h1{
+  font-family: 'Sansita', sans-serif;
+  text-align: center;
+  color: #202020;
+}
+
+.noticia h3 {color: #4C9900;font-family: 'Oxygen', sans-serif;}
+.noticia p {color: #606060; line-height: 1.5em;font-family: serif,sans-serif;}
