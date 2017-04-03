@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.2.0.js">
+    </script>
+  </head>
+
+  <body>
+
+    <section>
+      <article >
+        <h2>Esto es una prueba</h2>
+        <p id="parrafo1">Parrafo 1</p>
+        <p class="parrafo2"> Parrafo 2</p>
+        <button id="boton1">Toque el boton para ocultar</button>
+      </article>
+
+      <article id="segundo">
+          <h2>Cambio de eventos</h2>
+          <p>Nombre</p>
+          <input type="text" name="nombre" placeholder="Nombre">
+          <p>Correos</p>
+          <input type="text" name="correo" placeholder="Correo">
+
+          <button id="elementos">Toque el boton para ocultar o mostrar</button>
+      </article>
+
+      <article>
+        <h2>Apariciones</h2>
+        <div class="cuadrito" id="div1" style="
+        width:80px;height:80px;display:none;
+        background-color:red;">
+        </div>
+        <br>
+        <div class="cuadrito" id="div2" style="
+        width:80px;height:80px;display:none;
+        background-color:green;">
+        </div>
+        <br>
+        <div class="cuadrito" id="div3" style="
+        width:80px;height:80px;display:none;
+        background-color:blue;">
+        </div>
+
+        <div id="animado" style="background:#98bf21;
+        height:100px;width:100px;position:absolute;">
+        </div>
+        <button id="mostrar" >Toque para mostrar</button>
+        <button id="eliminar">Toque para eliminar</button>
+
+      </article>
+
+    </section>
+
+  </body>
+
+  <script >
+    $(document).ready(function(){
+        console.log("Hola Mundo");
+        $("#boton1").click(function(){
+          $("#parrafo1").hide(1000);
+          $("#boton1").html("Doble click para mostrar");
+        });
+        //-------------------------------------------------
+        $("#boton1").dblclick(function(){
+          $("p").show();
+          $("#boton1").html("Toque el boton para ocultar");
+        });
+        //-------------------------------------------------
+        /*$("#parrafo1").hover(function(){
+          alert("Paso por encima");
+        });*/
+        //-------------------------------------------------
+        $("input").focus(function(){
+          $(this).css("background-color", "#cccccc");
+        });
+        //-------------------------------------------------
+        $("#elementos").click(function(){
+          $("#segundo p").toggle(1000,function(){
+            alert("Heyy me estan ocultando");
+          });
+        });
+        //-------------------------------------------------
+        $("#mostrar").click(function(){
+          $("#div1").fadeIn();
+          $("#div2").fadeIn("slow");
+          $("#div3").fadeIn(2000);
+        });
+        //-------------------------------------------------
+        $("#eliminar").click(function(){
+          $("#div1").fadeOut();
+          $("#div2").fadeOut("slow");
+          $("#div3").fadeOut(2000);
+        });
+        //-------------------------------------------------
+        $(".cuadrito").click(function(){
+          $(this).slideToggle("slow");
+        });
+        //-------------------------------------------------
+        $("#animado").click(function(){
+          $(this).animate({left: '250px'});
+        });
+    });
+  </script>
+</html>

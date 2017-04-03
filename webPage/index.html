@@ -38,14 +38,14 @@
 
 
 		<aside>
-			<section>
-				<p>Garantizamos el 100% de puntualidad en todas nuestras actividades</p>
+			<section id="animacion">
+				<p >Garantizamos el 100% de puntualidad en todas nuestras actividades</p>
 			</section>
-			<section>
-				<p>Puedes escoger entre el aplio calendario que tenemos disponible.</p>
+			<section id="animacion">
+				<p >Puedes escoger entre el aplio calendario que tenemos disponible.</p>
 			</section>
-			<section>
-				<p>Tenemos actividades diseñadas para el perfil de cada uno nde los turistas.</p>
+			<section id="animacion" >
+				<p >Tenemos actividades diseñadas para el perfil de cada uno nde los turistas.</p>
 			</section>
 		</aside>
 
@@ -66,7 +66,23 @@
 				<a href="https://www.youtube.com/"><img src="img/youtube.svg"></a>
 				<p>Contacto: fortuna@fortuna.com - (+506 83204099)</p>
 			</div>
+			<script src="jquery-3.1.1.min.js"></script>
+		  <script src="jquery-ui.min.js" charset="utf-8"></script>
+
+			<script>
+				$(document).ready(function(){
+					$("#animacion").hover(function(){
+				   $(this).animate({fontSize: "22"}, 300);
+				    }, function() {
+				      $(this).animate({fontSize: "16"}, 300);
+				  });
+				});
+
+			</script>
+
+
 		</footer>
+
 	</div>
 
 </body>

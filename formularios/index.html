@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Formularios</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+
+      </nav>
+    </header>
+
+    <aside >
+      <nav>
+
+      </nav>
+
+    </aside>
+
+    <section>
+      <h1>Formularios</h1>
+        <form action="http://tec.com/servidor.php" method="post">
+          <fieldset>
+            <legend>Datos de usuario</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="escribe tu nombre" required autofocus/>
+            <br>
+
+            <label for="apellidos">Apellido</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="primer apellido">
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" >
+            <br>
+            <label for="clave">Contraseña</label>
+            <input type="password" name="clave" id="clave">
+            <br>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail">
+            <input type="hidden" name="sitio" value="oculto">
+            <br>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios"> Aliquip te illum, an anim anim duis
+            partiatur, ne cillum duis ut tempor, quorum.</textarea>
+            <br>
+            <button type="submit" >Enviar con botón <i class="fa fa-briefcase"></i></button>
+            <!--<input type="submit" value="Enviar form">-->
+            <input type="reset" value="Borrar">
+
+          </fieldset>
+        </form>
+    </section>
+
+    <section>
+      <article >
+          <h2>Iframes</h2>
+          <iframe src="http://tecdigital.tec.ac.cr" id="la_nacion"></iframe>
+      </article>
+    </section>
+
+    <section>
+      <h1>Tablas y estructuras complejas</h1>
+      <article >
+        <h2>Tablas</h2>
+
+        <table>
+            <thead>
+              <tr>
+                <th>cabecero 1</th>
+                <th>cabecero 2</th>
+                <th>cabecero 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col1"> elemento 11</td>
+                <td class="col2"> elemento 12</td>
+                <td class="col3"> elemento 13</td>
+              </tr>
+
+              <tr>
+                <td > elem. 21</td>
+                <td > elem. 22</td>
+                <td > elem. 23</td>
+              </tr>
+
+              <tr>
+                <td> elemento 31</td>
+                <td> elemento 32</td>
+                <td> elemento 33</td>
+              </tr>
+            </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section>
+        <ul>
+          <li><a href="http://www.google.es">Google</a></li>
+          <li><a href="http://www.w3c.org">W3c</a></li>
+          <li><a href="http://www.yahoo.es">Yahoo</a></li>
+          <li><a href="http://translate.google.com">Translate</a></li>
+        </ul>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <form id="login">
+      <label>Nombre: </label>
+      <input type="text" id="nombre" style="display:block;">
+      <br>
+
+      <label>Contraseña: </label>
+      <input type="password" id="password">
+      <br>
+
+      <input type="button" id="send" value="submint">
+
+      <div id="resultado">
+
+      </div>
+
+    </form>
+  </body>
+
+
+  <script src="jquery-3.2.0.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("resultado").hide();
+      $("#send").click(function(){
+        var nombre = $("#nombre").val();
+        var password = $("#password").val();
+
+        //ajax
+        $.post('login.php',{nombrePHP:nombre,
+            passwordPHP:password},function(data){
+              $("#resultado").fadeIn('slow').html(data);
+              console.log("lml");
+        });
+      });
+    });
+
+  </script>
+</html>
